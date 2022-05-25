@@ -3,7 +3,7 @@ import pandas as pd
 # Leitura da tabela do excel e armazenando na variavel df
 df = pd.read_excel(r"C:\Users\Evandro\Downloads\preferencias.xlsx")
 
-# Adicionando a cada variavel a médias da preferencia
+# Adicionando a cada variavel as médias das idades
 brasileira = df[df.Culinária_preferida == "Brasileira"].Idades.mean().round()
 francesa = df[df.Culinária_preferida == "Francesa"].Idades.mean().round()
 italiana = df[df.Culinária_preferida == "Italiana"].Idades.mean().round()
